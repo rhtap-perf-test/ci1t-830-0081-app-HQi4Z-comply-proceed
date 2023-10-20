@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jgom
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0081-tenant/ci1t-830-0081-app/devfile-sample-jgom@sha256:aad5bed7d8c9ca376ef8e552f13602d0c29cb1cd8e0779f1e6c4482bb0c58522
+        name: my-nodejs
+        resources: {}
+status: {}
